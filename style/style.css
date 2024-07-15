@@ -27,9 +27,9 @@ header{
 }
 .nav-link li{
   list-style: none;
+  margin-right: 50px;
 }
 .nav-link a{
-  margin-right: 50px;
   text-decoration: none;
   color: rgb(66, 66, 66);
   font-size: 1rem;
@@ -87,8 +87,7 @@ header{
   gap: 15px;
 }
 .team-album img{
-  width: 240px;
-  height: 240px;
+  width: 100%;
 }
 .team-description{
   display: flex;
@@ -117,4 +116,77 @@ header{
 }
 .team-btn{
   margin: 10px 0;
+}
+
+
+@media screen and (max-width: 576px) {
+  .nav-container{
+    flex-direction: column;
+    padding: 50px;
+  }
+  .nav-container p{
+    font-size: 2rem;
+  }
+  .nav-link{
+    margin: 20px auto;
+  }
+   .nav-link li{
+    margin-right: 15px;
+  }
+  .team-album img{
+    width: 100%;
+    height: 100%;
+}
+  .banner-container h1{
+    font-size: 2.5rem;
+    margin-top: -50px;
+  }
+  .team-section{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .team-album{
+    padding: 15px;
+    margin: 25px auto;
+  }
+  .team-description p{
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+  .nav-container{
+    /* flex-direction: column; */
+    padding: 30px;
+  }
+  .nav-container p{
+    font-size: 2rem;
+  }
+  .banner-container h1{
+    font-size: 2.5rem;
+  }
+  .team-section{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .team-album{
+    margin: 25px auto;
+    padding: 15px;
+  }
+  .team-description{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .team-description p{
+    max-width: 80%;
+  }
+  .team-description > h3 > p{
+    display: inline;
+  }
+    .nav-link li{
+    margin-right: 20px;
+  }
+
+
+
 }
