@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Work Sans, sans-serif;
+}
+/* Header Section :start */
+header{
+  max-width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+}
+
+/* Nav Section :start */
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 160px;
+}
+.nav-container p{
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav-link{
+  display: flex;
+  align-items: center;
+}
+.nav-link li{
+  list-style: none;
+}
+.nav-link a{
+  margin-right: 50px;
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Nav Section :end */
+/* Banner Section :start */
+.banner-container{
+  max-width: 45%;
+  margin: 0 auto;
+}
+.banner-container h1{
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.banner-container p{
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 32px 0;
+}
+.primary-btn{
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 25px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  border: none;
+}
+.banner-image{
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+  padding: 50px 0;
+}
+/* Banner Section :end */
+/* Header Section :end */
+
+/* Team Section :start */
+.team-section{
+  display: flex;
+  margin: 70px 100px;
+  justify-content: center;
+}
+.team-album{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.team-album img{
+  width: 240px;
+  height: 240px;
+}
+.team-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 40px;
+}
+.team-description h3{
+  color: rgb(114, 114, 114);
+  font-size: 1.8rem;
+}
+.team-description span{
+  color: rgb(19, 19, 19);
+  font-size: 1.8rem;
+}
+.team-description > h3 > p{
+  color: rgb(255, 144, 14);
+  font-size: 1.8rem;
+}
+.team-description p{
+  color: rgb(114, 114, 114);
+  font-size: .75rem;
+  font-weight: 400;
+  margin: 8px 0;
+}
+.team-btn{
+  margin: 10px 0;
+}
