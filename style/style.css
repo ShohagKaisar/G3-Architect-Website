@@ -107,6 +107,7 @@ header{
 .team-description > h3 > p{
   color: rgb(255, 144, 14);
   font-size: 1.8rem;
+  font-weight: 700;
 }
 .team-description p{
   color: rgb(114, 114, 114);
@@ -131,33 +132,29 @@ header{
     margin: 20px auto;
   }
    .nav-link li{
-    margin-right: 15px;
+    margin-right: 10px;
   }
-  .team-album img{
-    width: 100%;
-    height: 100%;
-}
+  .team-album{
+    padding: 15px;
+    margin: 25px auto;
+  }
   .banner-container h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: -50px;
   }
   .team-section{
     flex-direction: column;
     margin: 0 auto;
   }
-  .team-album{
-    padding: 15px;
-    margin: 25px auto;
-  }
   .team-description p{
     max-width: 80%;
   }
 }
 
-@media screen and (min-width:577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 769px) {
   .nav-container{
     /* flex-direction: column; */
-    padding: 30px;
+    padding: 30px 50px;
   }
   .nav-container p{
     font-size: 2rem;
@@ -186,7 +183,4 @@ header{
     .nav-link li{
     margin-right: 20px;
   }
-
-
-
 }
