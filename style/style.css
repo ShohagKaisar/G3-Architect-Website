@@ -122,7 +122,7 @@ header{
 .feature-section{
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 92px;
   padding: 50px;
   max-width: 90%;
   margin: 0 auto;
@@ -160,6 +160,22 @@ header{
 .feature-img img{
   width: 100%;
 }
+.feature-btn{
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  border: none;
+  padding: 46px 42px;
+}
+.feature-btn{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-top: -100px;
+  margin-left: -75px;
+}
+.feature-btn p{
+  font-size: 1rem;
+}
 
 /* Feature Section End */
 
@@ -192,11 +208,28 @@ header{
   .team-description p{
     max-width: 80%;
   }
+  .feature-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container{
+    width: 100%;
+    margin: 0;
+}
+.feature-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-btn{
+  padding: 10px 15px;
+  font-size: 2rem;
+  margin: 20px auto;
+}
 }
 
 @media screen and (min-width: 577px) and (max-width: 769px) {
   .nav-container{
-    /* flex-direction: column; */
     padding: 30px 50px;
   }
   .nav-container p{
@@ -226,4 +259,20 @@ header{
     .nav-link li{
     margin-right: 20px;
   }
+   .feature-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container{
+    width: 100%;
+    margin: 0;
+}
+.feature-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-btn{
+  margin: 20px auto;
+}
 }
