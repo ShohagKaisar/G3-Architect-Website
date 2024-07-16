@@ -120,15 +120,16 @@ header{
 }
 /* Feature Section Start */
 .feature-section{
+  max-width: 90%;
   display: flex;
   justify-content: center;
-  gap: 92px;
+  gap: 80px;
   padding: 50px;
   max-width: 90%;
   margin: 0 auto;
 }
 .card-container{
-  width: calc(80% - 50px);
+  width: calc(80% - 30px);
 }
 .card-container h3{
   border-left: 5px solid rgb(255, 144, 14);
@@ -142,11 +143,10 @@ header{
   color: rgb(114, 114, 114);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
 }
 .card-div{
   border-radius: 8px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   background: rgb(255, 255, 255);
@@ -156,28 +156,77 @@ header{
   color: rgb(19, 19, 19);
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 .feature-img img{
   width: 100%;
+  height: 92%;
 }
 .feature-btn{
   border-radius: 8px;
   background: rgb(255, 144, 14);
   border: none;
-  padding: 46px 42px;
-}
-.feature-btn{
+  padding: 40px 32px;
   font-size: 3.5rem;
   font-weight: 700;
   color: white;
   margin-top: -100px;
-  margin-left: -75px;
+  margin-left: -65px;
 }
 .feature-btn p{
   font-size: 1rem;
 }
-
 /* Feature Section End */
+
+/* Facts Section Start */
+
+.fact-container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.fact-div{
+  margin: 20px 0;
+}
+.fact-div h3{
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.fact-div p{
+color: rgb(114, 114, 114);
+font-size: 1rem;
+font-weight: 400;
+}
+/* Success Card */
+
+.success-container{
+  max-width: 95%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 80px;
+}
+.success-card{
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  text-align: center;
+  padding: 25px 15px 60px;
+  width: 100%;
+}
+.success-card h3{
+color: rgb(66, 66, 66);
+font-size: 3rem;
+font-weight: 600;
+}
+.success-card p{
+color: rgb(114, 114, 114);
+font-size: 1rem;
+font-weight: 600;
+}
+
+/* Facts Section End */
+
 
 @media screen and (max-width: 576px) {
   .nav-container{
@@ -215,17 +264,32 @@ header{
   .card-container{
     width: 100%;
     margin: 0;
-}
-.feature-img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.feature-btn{
-  padding: 10px 15px;
-  font-size: 2rem;
-  margin: 20px auto;
-}
+  }
+  .feature-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-btn{
+    padding: 10px 15px;
+    font-size: 2rem;
+    margin: 20px auto;
+  }
+  .fact-div{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .success-container{
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 40px));
+  gap: 50px;
+  margin: 20px;
+  }
+
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 769px) {
@@ -275,4 +339,17 @@ header{
 .feature-btn{
   margin: 20px auto;
 }
+ .fact-div{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .success-container{
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 40px));
+    gap: 50px;
+    margin: 20px;
+  }
 }
